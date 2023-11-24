@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Collections</title>
+   <link rel="stylesheet" href="ProjectStyle.css">
+   <script src="main.js" defer></script>
+</head>
+
+   <header class="header">
+      <a href="index.html">Rachel Zuehlke</a>
+      <div class="menu-btn">
+        <div class="menu-btn_lines"></div>
+      </div>
+      <ul class="menu-items">
+        <li><a href="index.html" class="menu-item">Home</a></li>
+        <li><a href="gallery.html" class="menu-item">Gallery</a></li>
+        <li><a href="project.html" class="menu-item">Projects</a></li>
+        <li><a href="contact.html" class="menu-item">Contact</a></li>
+      </ul>
+    </header>
+
+    <div class="container">
+      
+      <div class="section_title"><!--top section-->
+         <h1>Projects</h1>
+         <h2>Dive into Rachel's dynamic world of digital artistry, where she crafts captivating school mascots, board game illustration, and iconic beer can designs. With a keen eye for detail and bold creativity, Rachel turns client's vision into visual masterpieces.</h2>
+      </div><!------------------------------------->
+
+
+         <div class="image-container">
+
+            <div class="image"><img src="img/burgle-smurch-faces 2.png" alt="">
+            </div>
+               <div class="image-description">
+                  <h3>A Dragonborn character study that utilizes photo references of various lizard and amphibian species, incorporating their unique features to emphasize their scheming personality.</h3>
+               </div>
+
+            <div class="image"><img src="img/Lee doodles.png" alt=""></div>
+               <div class="image-description">
+                  <h3>This character expression sheet was created to help understand how this confused but curious poltergeist character would move and pose.</h3>
+               </div>
+         </div><!-----image-container----->      
+
+         <div class="section_title"><!---2nd section-->
+            <h1>Example of Rachel's project from start to finish...</h1>
+            <h2>Her projects begins with brainstorming and conceptualization, using various methods to develop ideas and inspiration. The production phase involves creating the artwork using digital tools and software, experimenting with different techniques and styles. The post-production phase refines and polishes the artwork, adjusting colors, lighting, composition, and other elements to create the final piece.</h2>
+         </div><!----------------2nd section----------->
+
+         <div class="image-container">
+
+               <div class="image"><img src="img/Cobalt-page-1.jpg" alt=""></div>
+                  <div class="image-description">
+                     <h3>This character design began with finding a silhouette and inspiration from fictional and historical figures.</h3>
+                  </div>
+               
+               <div class="image"><img src="img/Cobalt-page-2.jpg" alt=""></div>
+                  <div class="image-description">
+                     <h3>The second stage began with exploring details, then mapping color and defining faces.</h3>
+                  </div>
+
+               <div class="image"><img src="img/Cobalt-full-body.jpg" alt=""></div>
+                  <div class="image-description">
+                     <h3>In the final stage, polish was added and all of the components were pulled together to fit the clients vision.</h3>
+                  </div>
+         </div><!-----image-container----->
+
+         <div class="section_title"><!---3rd section-->
+            <h1>Other commisioned projects:</h1>
+            <h2>The commissioned art projects included creating a logo for a college gaming club, designing a board game, and creating a beer bottle label.</h2>
+         </div><!----------------------3rd section----->
+
+
+
+      <div class="image-container">
+
+         <div class="image"><img src="img/UNAGC-banner-black-border.png" alt=""></div>
+            <div class="image-description">
+               <h3>For the college gaming club logo, the artist worked closely with the club members to understand their vision and preferences and created two variations of the logo. After feedback and revisions, the final design was chosen and refined to create a clean and professional logo that reflected the club's identity.</h3>
+            </div>
+         
+         <div class="image"><img src="img/UNAGC-banner-white-border.png" alt=""></div>
+            <div class="image-description">
+               <h3>A variation of the same logo.</h3>
+            </div>
+
+         <div class="image"><img src="img/Beer-Label.png" alt=""></div>
+            <div class="image-description">
+               <h3>The beer bottle label design was also a collaborative process, with the artist working closely with the client to create a label that was both visually striking and aligned with their branding goals.</h3>
+            </div>
+
+      </div><!-----image-container----->
+
+         <div class="section_title"><!---Last section-->
+            <h2>Interested in a commissioned art piece? Feel free to reach out to me for more information.</h2>
+         </div>
+
+         <div class="popup-image">
+            <span>&times;</span>
+            <img src="img/burgle-smurch-faces 2.png"  alt="">
+         </div>
+   </div><!---Container Div  -->
+
+   <footer>
+      <div class="footer">
+      <p>&copy; 2023 Rachel Zuehlke Studio. All Rights Reserved.</p>
+    </div>
+    </footer>
+
+         <script>
+            document.querySelectorAll('.image-container img').forEach(image =>{image.onclick = () => {
+               document.querySelector('.popup-image').style.display = 'block';
+               document.querySelector('.popup-image img').src = image.getAttribute('src');
+            }
+            });
+         
+            document.querySelector('.popup-image span').onclick = () =>{
+               document.querySelector('.popup-image').style.display = 'none';
+            }
+            </script>
+</body>
+</html>
+
+
+
+
+
+
+
+   
+
+
+
