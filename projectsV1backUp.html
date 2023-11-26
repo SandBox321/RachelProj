@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rachel Zuehlke Art</title>
+  <link rel="stylesheet" href="projectsV1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css">
+
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <a href="#">Rachel Zuehlke</a>
+    <div class="menu-btn">
+      <div class="menu-btn_lines"></div>
+    </div>
+    <ul class="menu-items">
+      <li><a href="index.html" class="menu-item">Home</a></li>
+      <li><a href="gallery.html" class="menu-item">Gallery</a></li>
+      <li><a href="projects.html" class="menu-item">Projects</a></li>
+      <li><a href="contact.html" class="menu-item">Contact</a></li>
+    </ul>
+
+  </header>
+  <div class="proj-welcome">
+    <h1>projects</h1>
+    <p>Projects begin with Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quia voluptate vero cupiditate possimus magnam fugit! Ipsa temporibus facere distinctio eos nostrum eum facilis quo. Earum error rem consequuntur perspiciatis.</p>
+  </div>
+
+  <div class="gallery-container">
+
+    <div class="gallery-item" data-index="1">
+      <img src="img/burgle-smurch-faces 2.png" alt="">
+      
+      
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam voluptatibus corrupti at, autem sint quae alias
+      aliquam nulla voluptates laboriosam eum ex, ab esse vitae ut voluptate temporibus, eos consequatur.</p>
+
+
+    <div class="gallery-item" data-index="2">
+      <img src="img/Lee doodles.png" alt="">
+     
+    </div>
+    <p>Lorem2 ipsum, dolor sit amet consectetur adipisicing elit. Et labore, possimus dolore necessitatibus quasi quos?
+      Deleniti neque provident, in dolore illo praesentium dicta voluptas ipsa nemo ad at iste vel.</p>
+
+    
+
+    <div class="gallery-item" data-index="3">
+      <img src="img/Cobalt-page-1.jpg" alt="">
+      
+    </div>
+    <p>Lorem3 ipsum dolor, sit amet consectetur adipisicing elit. Velit odit vitae omnis sit fugiat quasi iusto
+      inventore, suscipit unde beatae rerum voluptates ea et porro, eaque, earum veritatis? Blanditiis, voluptate.</p>
+
+
+    <div class="gallery-item" data-index="4">
+      <img src="img/Cobalt-page-2.jpg" alt="">
+      
+    </div>
+    <p>Lorem4 ipsum dolor sit, amet consectetur adipisicing elit. Debitis repellendus ab nemo quasi veniam maxime
+      maiores, sequi deleniti ad earum dolor quibusdam, numquam, laudantium porro voluptates reprehenderit! Quae, velit
+      placeat!</p>
+
+
+    <div class="gallery-item" data-index="5">
+      <img src="img/Cobalt-full-body.jpg" alt="">
+      
+    </div>
+    <p>Lorem5 ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, blanditiis earum iste fuga laudantium nulla
+      modi natus, maiores, at eveniet doloribus laboriosam iure cumque rerum odit officia animi libero ab?</p>
+
+
+    <div class="gallery-item" data-index="6">
+      <img src="img/UNAGC-banner-black-border.png" alt="">
+      
+    </div>
+    <p>Lorem6 ipsum dolor sit amet consectetur adipisicing elit. Sed quis fugit sapiente non nostrum quos blanditiis
+      repellat! Commodi, animi. Enim, soluta eos facilis voluptatibus quos rem corrupti similique blanditiis fugiat!</p>
+
+
+    <div class="gallery-item" data-index="7">
+      <img src="img/UNAGC-banner-white-border.png" alt="">
+    </div>
+    <p>Lorem7 ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quisquam laborum maiores sed vitae quis in
+      praesentium, doloribus, vero ea excepturi voluptatum, laboriosam sint atque quo sequi illum similique commodi.</p>
+
+
+    <div class="gallery-item" data-index="8">
+      <img src="img/board-game-box-art-concept.png" alt="">
+    </div>
+    <p>Lorem8 ipsum dolor sit amet consectetur adipisicing elit. Officiis, voluptatum libero. Molestiae rem, corporis
+      voluptates dolorem esse laborum obcaecati eum dolor veniam neque magni quod modi molestias temporibus cum ab!</p>
+
+
+    <div class="gallery-item" data-index="9">
+      <img src="img/Beer-Label.png" alt="">
+      
+    </div>
+    <p>Lorem9 ipsum dolor sit, amet consectetur adipisicing elit. Eligendi nostrum sed cumque, dignissimos consequatur
+      hic molestiae similique asperiores eum, harum ducimus. Nobis quod odit sed distinctio, porro quidem officiis
+      praesentium?</p>
+
+
+
+
+  </div>
+  <!--javascript-->
+  <script>
+    const galleryItem = document.getElementsByClassName("gallery-item");
+    //create element for lightbox
+    const lightBoxContainer = document.createElement("div");
+    //for basic area
+    const lightBoxContent = document.createElement("div");
+    //for images
+    const lightBoxImg = document.createElement("img");
+    //for prev button to change image
+    const lightBoxPrev = document.createElement("div");
+    //for next button to change image
+    const lightBoxNext = document.createElement("div");
+
+
+    //create classlist
+
+    lightBoxContainer.classList.add('lightbox');
+    lightBoxContent.classList.add('lightbox-content');
+    lightBoxPrev.classList.add("fa", "fa-angle-left", "lightbox-prev");
+    lightBoxNext.classList.add("fa", "fa-angle-right", "lightbox-next");
+
+    lightBoxContainer.appendChild(lightBoxContent);
+    lightBoxContent.appendChild(lightBoxImg);
+    lightBoxContent.appendChild(lightBoxPrev);
+    lightBoxContent.appendChild(lightBoxNext);
+    document.body.appendChild(lightBoxContainer);
+
+
+
+    let index = 1;
+
+    //create function
+
+    function showLightBox(n) {
+      if (n > galleryItem.length) {
+        index = 1;
+      } else if (n < 1) {
+        index = galleryItem.length;
+      }
+      let imageLocation = galleryItem[index - 1].children[0].getAttribute("src");
+      lightBoxImg.setAttribute("src", imageLocation);
+    }
+
+
+    function currentImage() {
+      lightBoxContainer.style.display = "block";
+
+      let imageIndex = parseInt(this.getAttribute("data-index"));
+      showLightBox(index = imageIndex);
+
+    }
+
+
+    for (let i = 0; i < galleryItem.length; i++) {
+      galleryItem[i].addEventListener("click", currentImage);
+    }
+
+    function sliderImage(n) {
+      showLightBox(index += n);
+    }
+
+    function prevImage() {
+      sliderImage(-1);
+    }
+
+    function nextImage() {
+      sliderImage(1);
+    }
+
+    lightBoxPrev.addEventListener("click", prevImage);
+    lightBoxNext.addEventListener("click", nextImage);
+
+    //close lightbox
+
+    function closeLightBox() {
+      if (this === event.target) {
+        lightBoxContainer.style.display = "none";
+      }
+    }
+
+    lightBoxContainer.addEventListener("click", closeLightBox);
+
+
+
+  </script>
+</body>
+
+</html>
