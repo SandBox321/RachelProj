@@ -168,7 +168,7 @@ body {
 }
 
 /* For the Behance icon */
-.fab.fa-behance {
+.fab.fa-behance, .fab.fa-artstation {
   padding: 20px;
   color: rgb(238, 237, 237);
   font-size: 25px;
@@ -178,19 +178,10 @@ body {
 
 /* Add hover effect for both icons */
 .fab.fa-instagram:hover,
-.fab.fa-behance:hover {
+.fab.fa-behance:hover, 
+.fab.fa-artstation:hover {
   background-color: #9f98aa;
   transition: opacity 0.4s ease-in-out;
-}
-
-.fab.fa-pinterest{
-  position: relative;
-  color: #fff;
-  padding: 20px;
-  font-size: 25px; 
-  transition: background-color 0.3s; 
-  z-index: 100;
-  align-self: center;
 }
 
 /* Etsy store icon */
@@ -217,21 +208,6 @@ body {
     font-weight: 800;
   }
 }
-
-  .fab.fa-pinterest:hover {
-    background-color: #9f98aa;
-    &::after {
-    content: "Coming Soon";
-    position: absolute;
-    bottom: 25%; 
-    left:30%;
-    transform: translateX(-45%);
-    transform: translateY(30%);
-    font-size: 15px; 
-    color: black; /* Text color */
-    font-weight: 800;
-    }
-  }
 
 footer p{
   font-size: 1em;
@@ -1201,64 +1177,3 @@ footer{
     font-size: 1.2rem;
   }
  }
-/*
- @media only screen and (min-width: 1367px) and (max-width: 1368px) and (orientation: landscape)
- {
-  .header a{
-    font-size: 1.8rem;
-  }
-  
-  .section {
-    position: relative;
-    height: 140vh;
-    display: flex;
-    align-items: center;
-  }
-
-  .hero-col h1 {
-    position: absolute;
-    font-size: clamp(20px, 3vw, 30px);
-    top: 63rem;
-    left: 15vw;
-    }
-    
-  .hero-col h2 {
-    position: absolute;
-    top: 66rem;
-    left: 18vw;
-    font-size: clamp(15px, 2vw, 20px);
-  }
-
-  .hero-col p {
-    position: absolute;
-    left:0;
-    top: 70rem;
-    right:1vw;
-    font-size: 1.5rem;
-    padding: 1em;
-  }
-
-  .hero-section img {
-    position: absolute;
-    width:60vw;
-    left: 20%;
-    top: 6vh;
-  }
-
-  .icon_container{
-   margin:0;
-  }
-
-  footer{
-    font-size: 1.2rem;
-  }
- }*/
-/*
-@media only screen and (min-width: 1369px) and (max-width: 1700px) and (orientation: landscape){
-
-  .header a{
-    color:blue;
-
-
-}
-}*/
