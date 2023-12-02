@@ -655,6 +655,7 @@ footer p{
     overflow: none;
   }
 }
+
 @media (1025px<= width <=1223px){
     .hero-section{
       overflow: hidden;
@@ -981,11 +982,46 @@ footer{
   font-size: 1.0rem;
   }
 }
-@media only screen and (min-width: 1000px) and (max-width: 1025px) and (orientation: landscape){
-  /*ipad mini size*/
-  .header a{
-    font-size: 1.7rem;color:pink;
+@media only screen and (min-width: 1000px) and (max-width: 1024px) and (orientation: landscape){
+  .section {
+    position: relative;
+    height: 180vh;
   }
+  .hero-col h1 {
+    font-size: 45px;
+    top: 52rem;
+    left: 16rem;
+  }
+  .hero-col h2 {
+    top: 55rem;
+    left: 24rem;
+    font-size: clamp(15px, 2vw, 20px);
+  }
+  .hero-col p {
+    left:0;
+    top: 58rem;
+    font-size: 1.3rem;
+    padding-left: 2.2rem;
+  }
+  .hero-section img {
+    position: absolute;
+    width:70vw;
+    left: 15%;
+    top: 3vh;
+  }
+  .icon_container{
+    
+  }
+}
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1024px) 
+  and (min-device-height: 768px) 
+  and (max-device-height: 768px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1){
+    /*Landscape styles for Ipad Mini*/
+  .header a{}
   .section {
     position: relative;
     height: 150vh;
@@ -1024,12 +1060,11 @@ footer{
   .footer{
   font-size: 1.0rem;
   }
-}
+  }
 @media only screen and (min-width: 1025px) and (max-width: 1200px) and (orientation: landscape){
   .header a{
     font-size: 1.7rem;
   }
-  
   .section {
     position: relative;
     height: 150vh;
@@ -1037,21 +1072,18 @@ footer{
     justify-content: center;
     align-items: center;
   }
-
   .hero-col h1 {
     position: absolute;
     font-size: 45px;
     top: 56rem;
     left: 16rem;
     }
-    
   .hero-col h2 {
     position: absolute;
     top: 60rem;
     left: 28rem;
     font-size: clamp(15px, 2vw, 20px);
   }
-
   .hero-col p {
     position: absolute;
     left:0;
@@ -1059,18 +1091,15 @@ footer{
     font-size: 1.3rem;
     padding: 2rem;
   }
-
   .hero-section img {
     position: absolute;
     width:65vw;
     left: 20%;
     top: 5vh;
   }
-
   .icon_container{
     margin-top: 0;
-  }
-
+  } 
 footer{
   font-size: 1.0rem;
 }
@@ -1138,20 +1167,20 @@ footer{
   .hero-col h1 {
     position: absolute;
     font-size: 3.2rem;
-    top: 68rem;
+    top: 58rem;
     left: 28vw;
     }
     
   .hero-col h2 {
     position: absolute;
-    top: 71rem;
+    top: 61rem;
     left: 42vw;
     font-size: clamp(15px, 2vw, 20px);
   }
   .hero-col p {
     position: absolute;
     left:0;
-    top: 72rem;
+    top: 61rem;
     right:1vw;
     font-size: 1.5rem;
     padding-left: 5rem;
@@ -1160,9 +1189,9 @@ footer{
   }
   .hero-section img {
     position: absolute;
-    width:65vw;
-    left: 17%;
-    top: 5vh;
+    width:57vw;
+    left: 25%;
+    top: 4vh;
   }
   .icon_container{
    margin-top: 2rem;
