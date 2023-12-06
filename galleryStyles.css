@@ -213,7 +213,7 @@ body{
 }
 
 /* For the Behance icon */
-.fab.fa-behance {
+.fab.fa-behance, .fab.fa-artstation {
   padding: 20px;
   color: rgb(238, 237, 237);
   font-size: 25px;
@@ -223,19 +223,10 @@ body{
 
 /* Add hover effect for both icons */
 .fab.fa-instagram:hover,
-.fab.fa-behance:hover {
+.fab.fa-behance:hover,
+.fab.fa-artstation:hover {
   background-color: #9f98aa;
   transition: opacity 0.4s ease-in-out;
-}
-
-.fab.fa-pinterest{
-  position: relative;
-  color: #fff;
-  padding: 20px;
-  font-size: 25px;
-  transition: background-color 0.3s;
-  z-index: 100;
-  align-self: center;
 }
 
 /* Etsy store icon */

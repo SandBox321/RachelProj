@@ -155,24 +155,25 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-/* For the Instagram icon */
+/* For the Instagram icon*/
 .fab.fa-instagram {
-  padding: 20px;
+  padding: 0.75rem;
+  padding: 1rem;
   font-weight: bold;
   color: rgb(238, 237, 237);
   font-size: 25px;
   transition: opacity 0.4s ease-in-out;
   align-self: center;
+  border-radius: 50%;
 }
-
-/* For the Behance and ArtStation icons */
+/* For the Behance and ArtStation icons*/
 .fab.fa-behance, .fab.fa-artstation {
-  padding: 20px;
+  padding: 0.75rem;
   color: rgb(238, 237, 237);
   font-size: 25px;
   transition: opacity 0.4s ease-in-out;
   align-self: center;
+  border-radius: 50%;
 }
 
 /* Add hover effect for both icons */
@@ -183,16 +184,16 @@ body {
   transition: opacity 0.4s ease-in-out;
 }
 
-/* Etsy store icon */
+/* Etsy store icon*/
 .fas.fa-shopping-cart {
   position: relative;
   color: #fff;
-  padding: 20px;
+  padding: 0.75rem;
   font-size: 25px;
   transition: background-color 0.3s ease-in-out; 
   align-self: center;
+  border-radius: 50%;
 }
- 
 .fas.fa-shopping-cart:hover{
   background-color: #9f98aa;
   &::after {
