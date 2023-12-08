@@ -436,7 +436,7 @@ footer p{
 }
 @media (501px <= width <= 600px){
   .header a{
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
   .hero-section{
     height: 115vh;
@@ -499,7 +499,6 @@ footer p{
     height: 100%;
   }
   .menu-items li a:hover {
-    color: #111111;
     color:#5a4d70;
   }
   .hero-section{
@@ -507,9 +506,8 @@ footer p{
   }
 }
 @media (601px <= width <= 768px){
-
   .header a{
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
   .hero-section{
     height: 98vh;
@@ -656,7 +654,6 @@ footer p{
     overflow: none;
   }
 }
-
 @media (1025px<= width <=1223px){
     .hero-section{
       overflow: hidden;
@@ -747,10 +744,10 @@ footer p{
   }
 }
 
-/**-------Landscape Mode-----------------------------------------------***/
+/*******Landscape Mode*************/
 @media only screen and (min-width: 600px) and (max-width: 654px) and (orientation: landscape){
   .header a{
-    font: 1em;
+    font-size: 1.35rem;
 }
   .hero-col h1 {
     position: absolute;
@@ -785,7 +782,7 @@ footer p{
 
 @media only screen and (min-width: 655px) and (max-width: 710px) and (orientation: landscape) {
   .header a{
-    font-size: 1.7rem;
+    font-size: 1.35rem;
   }
   .hero-col h1 {
     position: absolute;
@@ -823,7 +820,7 @@ footer p{
 
 @media only screen and (min-width: 711px) and (max-width: 721px) and (orientation: landscape) {
   .header a{
-    font-size: 1.7rem;
+    font-size: 1.35rem;
   }
 
   .hero-col h1 {
@@ -866,7 +863,7 @@ footer{
 
 @media only screen and (min-width: 722px) and (max-width: 741px) and (orientation: landscape) {
   .header a{
-    font-size: 1.7rem;
+    font-size: 1.35rem;
   }
   .hero-col h1 {
     position: absolute;
@@ -904,7 +901,7 @@ footer{
 
 @media only screen and (min-width: 741px) and (max-width: 932px) and (orientation: landscape) {
   .header a{
-    font-size: 1.7rem;
+    font-size: 1.35rem;
   }
   .hero-col h1 {
     position: absolute;
