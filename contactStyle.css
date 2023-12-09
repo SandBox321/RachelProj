@@ -136,21 +136,7 @@ body {
 }
 .hero-section i:hover {
   background-color: #ccc7d3;
-}/*
-.fas.fa-shopping-cart:hover{
-  background-color:#ccc7d3;
-  &::after {
-    content: "Coming Soon";
-    position: absolute;
-    bottom: 25%;
-    left:30%;
-    transform: translateX(-45%);
-    transform: translateY(30%);
-    font-size: 15px;
-    color: black;
-    font-weight: 800;
-  }
-}*/
+}
 .fas.fa-shopping-cart:hover::after {
   content: "Coming Soon";
   position: absolute;
