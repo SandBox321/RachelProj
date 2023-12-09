@@ -779,7 +779,6 @@ footer p{
     margin-top: 20rem;
   }
 }
-
 @media only screen and (min-width: 655px) and (max-width: 710px) and (orientation: landscape) {
   .header a{
     font-size: 1.35rem;
@@ -1019,7 +1018,7 @@ footer{
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 1){
     /*Landscape styles for Ipad Mini*/
-  .header a{}
+  .header a{font-size: 2rem;}
   .section {
     position: relative;
     height: 150vh;
@@ -1106,7 +1105,6 @@ footer{
   .header a{
     font-size: 1.7rem;
   }
-  
   .section {
     position: relative;
     height: 150vh;
@@ -1114,21 +1112,18 @@ footer{
     justify-content: center;
     align-items: center;
   }
-
   .hero-col h1 {
     position: absolute;
     font-size: 45px;
     top: 61rem;
     left: 14rem;
     }
-    
   .hero-col h2 {
     position: absolute;
     top: 64rem;
     left: 28rem;
     font-size: clamp(15px, 2vw, 20px);
   }
-
   .hero-col p {
     position: absolute;
     left:0;
@@ -1136,18 +1131,15 @@ footer{
     font-size: 1.3rem;
     padding-left: 4rem;
   }
-
   .hero-section img {
     position: absolute;
     width:65vw;
     left: 18%;
     top: 5vh;
   }
-
   .icon_container{
     margin-top: 0;
   }
-
 footer{
   font-size: 1.0rem;
 }

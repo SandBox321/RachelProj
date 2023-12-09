@@ -444,7 +444,6 @@ font-size: 1rem;
 @media (501px <= width <= 600px){
   .header a{
     font-size: 1.3rem;
-   
   }
   .menu-btn {
     display: flex;
@@ -636,7 +635,6 @@ font-size: 1rem;
     font-size: 1.7rem;
   }  
 }
-
 /***********Landscape************/
 @media only screen and (min-width: 630px) and (max-width: 740px) and (orientation: landscape) {
     .header{
