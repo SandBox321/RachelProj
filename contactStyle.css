@@ -126,6 +126,7 @@ body {
   display: none;
 }
 .hero-section i{
+  display: inline-block;
   color: #573c84;
   padding: 0.75rem;
   border-radius: 50%;
@@ -135,7 +136,7 @@ body {
 }
 .hero-section i:hover {
   background-color: #ccc7d3;
-}
+}/*
 .fas.fa-shopping-cart:hover{
   background-color:#ccc7d3;
   &::after {
@@ -149,7 +150,18 @@ body {
     color: black;
     font-weight: 800;
   }
+}*/
+.fas.fa-shopping-cart:hover::after {
+  content: "Coming Soon";
+  position: absolute;
+  bottom: 25%;
+  left: 30%;
+  transform: translateX(-45%) translateY(30%);
+  font-size: 15px;
+  color: black;
+  font-weight: 800;
 }
+
 .hero-section h4{
 padding-top:2em;
 font-size: 1.5em;
