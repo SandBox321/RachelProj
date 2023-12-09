@@ -254,21 +254,6 @@ body{
   }
 }
 
-  .fab.fa-pinterest:hover {
-    background-color: #9f98aa;
-
-    &::after {
-    content: "Coming Soon";
-    position: absolute;
-    bottom: 25%; /* Adjust the position of the text as needed */
-    left:30%;
-    transform: translateX(-45%);
-    transform: translateY(30%);
-    font-size: 15px; /* Adjust the font size of the text */
-    color: black; /* Text color */
-    font-weight: 800;
-    }
-  }
   footer p{
     font-size: 1em;
     background-color:#dfdbe5;
@@ -570,7 +555,7 @@ font-size: 1rem;
     width: 60vw;
   }
 }
-@media (760px <= width <= 900px){
+@media (760px <= width <= 819px){
   .header a{
     font-size: 1.7rem;
   }
@@ -608,6 +593,25 @@ font-size: 1rem;
   .menu-items li a:hover {
     color:#5a4d70;
   }
+  .container .image-container{
+    max-width: 100%;
+  }
+  .container .popup-image img{
+    width: 60vw;
+  }
+  .container .image-container .image{
+    height: 290px;
+    width: 260px;
+  }
+  .container .image-container .image img{
+    border: 5px solid #fff;
+  }
+}
+@media (820px <= width <= 900px){
+  .header a{
+    font-size: 1.7rem;
+  }
+  
   .container .image-container{
     max-width: 100%;
   }
@@ -719,14 +723,50 @@ font-size: 1rem;
    width: 240px;
   }
 } 
-@media only screen and (min-width: 933px) and (max-width: 1281px) and (orientation: landscape){
+@media only screen and (min-width: 933px) and (max-width: 1100px) and (orientation: landscape){
   .header a{
     font-size: 1.7rem;
-  }   
+  }
+  .menu-btn {
+    display: flex;
+  }
+  .menu-items {
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 45vh;
+    transform: translateX(100vw);
+    background-color: #5a4d70;
+    transition: transform 0.3s ease-in-out;
+  }
+  .menu-items.open {
+    transform: translateX(0);
+  }
+  .menu-items li {
+    width: 100vw;
+    height: 100%;
+  }
+  .menu-items li a {
+    color: #ffffff;
+    font-size: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .menu-items li a:hover {
+    color:#5a4d70;
+  }
   .container .popup-image img{
     width: 35vw;
   }
-} 
+}
+@media only screen and (min-width: 1101px) and (max-width: 1281px) and (orientation: landscape){
+}
 @media only screen and (min-width: 1282px) and (max-width: 1400px) and (orientation: landscape){
   .container .image-container .image{
       height: 300px;
