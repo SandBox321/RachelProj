@@ -49,7 +49,6 @@ body{
    cursor: pointer;
    z-index: 1;
  }
- 
  .menu-btn_lines,
  .menu-btn_lines::before,
  .menu-btn_lines::after {
@@ -58,37 +57,30 @@ body{
    background-color: #111;
    transition: all 0.5s ease-in-out;
  }
- 
  .menu-btn_lines::before,
  .menu-btn_lines::after {
    content: " ";
    position: absolute;
  }
- 
  .menu-btn_lines::before {
    transform: translateY(-0.5rem)
  }
- 
  .menu-btn_lines::after {
    transform: translateY(0.5rem)
  }
- 
  /*animation*/
  .menu-btn.open .menu-btn_lines {
    transform: translateX(2rem);
    background-color: transparent;
  }
- 
  .menu-btn.open .menu-btn_lines::before {
    transform: rotate(45deg) translate(-1.5rem, 1.5rem);
    background-color: #ffffff;
  }
- 
  .menu-btn.open .menu-btn_lines::after {
    transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
    background-color: #ffffff;
  }
- 
 .container{
    position: relative;
    min-height: 100vh;
@@ -97,13 +89,11 @@ body{
    background-color:  #dfdbe5;
    padding-bottom: 1em;
 }
-
 .container .title {
   padding-top: 10px;
   padding-bottom: 10px;
   background-color:#573c84;
 }
-
 .container h1{
    padding-top: 30px;
    font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -121,7 +111,6 @@ body{
   padding-top: 20px;
   padding-bottom: 30px;
 }
-
 .container .image-container{
    max-width: 80%;
    margin: auto;
@@ -147,7 +136,6 @@ body{
    padding:3px;
    color: #5a4d70;
 }
-
 .container .image-container .image img{
    height: 100%;
    width: 100%;
@@ -159,11 +147,9 @@ body{
    overflow: hidden;
    cursor:pointer;
 }
-
 .container .image-container .image:hover img{
    transform: scale(1.02);
 }
-
 .container .popup-image{
    position:fixed;
    top:0; left:0;
@@ -173,7 +159,6 @@ body{
    z-index: 100;
    display: none;
 }
-
 .container .popup-image span{
    position: absolute;
    top:0; right: 10px;
@@ -183,7 +168,6 @@ body{
    cursor:pointer;
    z-index: 100;
 }   
-
 .container .popup-image img{
    position:absolute;
    top:50%; left: 50%;
@@ -201,8 +185,6 @@ body{
   justify-content: center;
   align-items: center;
 } 
-
-/* For the Instagram icon */
 .fab.fa-instagram {
   padding: 20px;
   font-weight: bold;
@@ -211,8 +193,6 @@ body{
   transition: opacity 0.4s ease-in-out;
   align-self: center;
 }
-
-/* For the Behance icon */
 .fab.fa-behance, .fab.fa-artstation {
   padding: 20px;
   color: rgb(238, 237, 237);
@@ -220,15 +200,12 @@ body{
   transition: opacity 0.4s ease-in-out;
   align-self: center;
 }
-
-/* Add hover effect for both icons */
 .fab.fa-instagram:hover,
 .fab.fa-behance:hover,
 .fab.fa-artstation:hover {
   background-color: #9f98aa;
   transition: opacity 0.4s ease-in-out;
 }
-
 /* Etsy store icon */
 .fas.fa-shopping-cart {
   position: relative;
@@ -238,7 +215,6 @@ body{
   transition: background-color 0.3s ease-in-out; 
   align-self: center;
 }
- 
 .fas.fa-shopping-cart:hover{
   background-color: #9f98aa; 
   &::after {
@@ -253,12 +229,10 @@ body{
     font-weight: 800;
   }
 }
-
-  footer p{
+  .footer p{
     font-size: 1em;
     background-color:#dfdbe5;
   }
-
 /************mobile devices*******/
 @media (200px <= width <= 300px){
   .header a{
@@ -475,13 +449,13 @@ font-size: 1rem;
     gap: 30px;
     justify-content: center;
     padding-top: 20px;
- }
+  }
   .container .image-container .image{
     height: 250px;
     width: 200px;
     padding: 10px;
     cursor:pointer;
- }
+  }
   .container .popup-image img{
     width: 80vw;
   }
@@ -611,7 +585,6 @@ font-size: 1rem;
   .header a{
     font-size: 1.7rem;
   }
-  
   .container .image-container{
     max-width: 100%;
   }
@@ -640,7 +613,7 @@ font-size: 1rem;
   }  
 }
 /***********Landscape************/
-@media only screen and (min-width: 630px) and (max-width: 740px) and (orientation: landscape) {
+@media only screen and (min-width: 630px) and (max-width: 740px) and (orientation: landscape){
     .header{
       padding: 1rem 2rem;
     }
