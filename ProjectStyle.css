@@ -744,6 +744,9 @@ body{
   .menu-items li a:hover {
     color:#5a4d70;
   }
+  .container .popup-image img{
+    width: 290px;
+  }
 }
 @media only screen and (min-width: 933px) and (max-width: 1100px) and (orientation: landscape){
   .header a{
@@ -794,8 +797,11 @@ body{
     width: 400px;
   }
 }
-@media only screen and (min-width: 1101px) and (max-width: 1281px) and (orientation: landscape){}
-
+@media only screen and (min-width: 1101px) and (max-width: 1281px) and (orientation: landscape){
+  .container .popup-image img{
+    width: 500px;
+  }
+}
 @media only screen and (min-width: 1282px) and (max-width: 1400px) and (orientation: landscape){  
   .container .popup-image img{
     width: 45vw;
