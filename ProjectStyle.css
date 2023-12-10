@@ -119,6 +119,7 @@ body{
    height: 450px;
    width: 350px;
    cursor:pointer;
+   align-self: center;
 }
 .container .image-container .image img{
    height: 100%;
@@ -224,6 +225,7 @@ body{
     grid-template-columns: 1fr;
     gap:15px;
     align-content: center;
+    justify-content: center;
   }
   .container .image-container .image{
     height: 44vh;
@@ -553,6 +555,10 @@ body{
   }
   .menu-items li a:hover {
     color:#5a4d70;
+  }
+  .container .image-container{
+    width:100vw;
+    grid-template-columns: 1fr 2fr;
   }
   .container .image-container .image{
     height: 300px;
